@@ -4,15 +4,10 @@ class pat{
 	    int r;
 	    Scanner sc=new Scanner(System.in);
 	    r=sc.nextInt();
-		for(int i=0;i<r;i++){
-		    for(int j=0;j<r;j++){
-		        if(i+j==r-1 || i==j){
-		            System.out.print("x");
+		for(int i=1;i<=r;i++){
+		    for(int j=1;j<=r;j++){
+		           System.out.print((char)(64+i)+" ");
 		        }
-		        else{
-		            System.out.print(0);
-		        }
-		    }
 		    System.out.println();
 		}
 	}
