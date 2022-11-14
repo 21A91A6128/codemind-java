@@ -1,0 +1,15 @@
+import java.util.*;
+class sta{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int vk[]=new int[n];
+        for(int r=0;r<n;r++){
+            vk[r]=sc.nextInt();
+        }
+        int a=sc.nextInt();
+        for(int r=0;r<a;r++){
+            System.out.print(vk[r]+" "+vk[r+a]+" ");
+        }
+    }
+}
