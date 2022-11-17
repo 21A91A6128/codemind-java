@@ -1,0 +1,20 @@
+import java.util.*;
+class unmaxnum{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        ArrayList<Integer> v=new ArrayList<Integer>();
+        for (int i=0;i<n;i++)
+            v.add(sc.nextInt());
+        HashSet<Integer> k=new HashSet<Integer>();
+        for (int i=0;i<n;i++)
+            k.add(v.get(i));
+        int vk=-1;
+        for (int i=0;i<n;i++)
+            for (int ele:k)
+                if (Collections.frequency(v,ele)==1)
+                    if (ele>vk)
+                        vk=ele;
+        System.out.print(vk);
+    }
+}
