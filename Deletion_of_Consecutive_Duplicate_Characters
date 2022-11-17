@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class docdc{
+    public static void main(String args[]){
+        int v,j,c=0;
+        String k;
+        Scanner sc=new Scanner(System.in);
+        v=sc.nextInt();
+        sc.nextLine();
+        for(j=0;j<v;j++){
+            k=sc.nextLine();
+            c=0;
+            char a=k.charAt(0);
+            for (int i=1;i<k.length();i++)
+            {
+                if (k.charAt(i)==a)
+                    c+=1;
+                a=k.charAt(i);
+            }
+            System.out.println(c);
+        }
+    }
+}
