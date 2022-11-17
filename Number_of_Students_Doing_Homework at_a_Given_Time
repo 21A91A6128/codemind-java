@@ -1,0 +1,20 @@
+import java.util.*;
+class studhw{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int [] v=new int [n];
+        for (int i=0;i<n;i++)
+            v[i]=sc.nextInt();
+        int m=sc.nextInt();
+        int [] k=new int [m];
+        for (int i=0;i<n;i++)
+            k[i]=sc.nextInt();
+        int r=sc.nextInt();
+        int vk=0;
+        for (int i=0;i<n;i++)
+            if (r>=v[i] && r<=k[i])
+                vk+=1;
+        System.out.println(vk);
+    }
+}
