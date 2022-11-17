@@ -1,0 +1,24 @@
+import java.util.*;
+class search
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b[]=new int[a];
+        for(int i=0;i<a;i++)
+        {
+            b[i]=sc.nextInt();
+        }
+        int c=sc.nextInt(),vk=-1;
+        for(int i=0;i<a;i++)
+        {
+            if(b[i]==c)
+            {
+                vk=i;
+                break;
+            }
+        }
+        System.out.println(vk);
+    }
+}
