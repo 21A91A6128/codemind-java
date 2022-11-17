@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class ct{
+    public static void main(String args[]){
+        int v,i,c=0;
+        Scanner sc=new Scanner(System.in);
+        v=sc.nextInt();
+        for(i=0;i<v;i++){
+            int k;
+            k=sc.nextInt();
+            if(k%2!=0){
+                c++;
+            }
+        }
+        System.out.println((v-c)+" "+c);
+    }
+}
