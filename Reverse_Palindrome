@@ -20,18 +20,19 @@ class revpal{
             return true;
         return false;
     }
-    public static void fun(int n){
-        int x;
-        x=rev(n);
-        n=n+x;
-        if(pal(n))
-            System.out.print(n);
-        else
-            fun(n);
-    }
     public static void main(String args[]){
         Scanner sc=new Scanner (System.in);
         int n=sc.nextInt();
-        fun(n);
+        while(true){
+            int x=rev(n);
+            n=n+x;
+            if(pal(n)){
+                System.out.print(n);
+                break;
+            }
+            else{
+                continue;
+            }
+        }
     }
 }
